@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .item1 { grid-area: header; }
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: right; }
+        .item5 { grid-area: footer; }
+        
+        .grid-container {
+          /* background-image: url(../image/new.webp); */
+          display: grid;
+          grid-template-areas:
+            'header header header header header header'
+            'main main main right right right'
+            'footer footer footer footer footer footer';
+          gap: 10px;
+          /* background-color: #2196F3; */
+          /* padding: 10px; */
+          margin-left: 20px;
+          margin-right: 20px;
+          
+        }
+        
+        .grid-container  div {
+          background:linear-gradient(90deg,#d5dce07c, rgba(103, 145, 173, 0.39), rgba(89, 134, 185, 0.356));
+      
+          /* text-align: center; */
+          text-align: justify;
+          padding-left: 20px ;
+          padding-right: 20px;
+          font-size: 20px;
+          margin-top: 0;
+          border-radius: 10px;
+        }
+        .p1{
+    text-align: justify;
+    font-size: 20px;
+   }
+   body{
+    background-image: url(./images/pexels-dana-tentis-370799.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+        </style>
+        </head>
+        <body>
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" alt="Avatar Logo" style="width:70px; height: 70px; padding-left: 2px;" class="rounded-pill "></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+              <li class="nav-item">
+              <a class="nav-link" href="file:///E:/HTML/website/index2.html">Home</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="file:///E:/HTML/website/contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal3">App's Development</button> </a></li>
+                <li><a class="dropdown-item" href="#"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">Security</button></a></li>
+                <li><a class="dropdown-item" href="#course"><button type="button" class="btn btn-primary">Courses</button></a></li>
+                <li><a class="dropdown-item" href="#"><button type="button" class="btn btn-primary">Batches</button></a></li>
+                
+              </ul>
+              </li> 
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">AboutUS</button> 
+              </ul>
+              </div>
+              </div>
+              </nav>
+              <!-- navbar end -->
+
+              <div class="container "> 
+
+    
+                              
+                <!-- The Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+                
+                      <!-- Modal Header -->
+<div class="modal-header" style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">
+<h4 class=" text-center p-2 " style="font-family: ubuntu; border-radius: 10px;">About Us</h4>
+<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+                
+                      <!-- Modal body -->
+<div class="modal-body">
+
+<p style="font-family: ubuntu;">Hematite Infotech Pvt. Ltd. is an organization dedicated to the spread of IT Education. Ever since its inception in 2017, the Academy has fulfilled its goals of providing Quality Computer Education, transforming the aspiring students into tomorrow’s IT professionals. Hematite Infotech has continuously upgraded its performance, creating a focus on advanced information technologies, high-end academics and training.</p>
+
+<p style="font-family: ubuntu;"> The center is having modern infrastructure including corporate standard laboratories equipped with latest state of art technologies. We are proud to remain associated with the best faculty in the industry. Besides lectures from expert, visiting faculty, we also organize vide based sessions, seminars, assignments, internship, projects, faculty-student discussions, expert talk and profiling of the students, guidance in Hackathon’s, Start-up’s etc. We also have a well-equipped library, with a wide array of manuals. We also provide the placement assistance to our students. Hematite Infotech has enviable placement record since its inception.</p>
+<ul style="font-family: ubuntu;">
+<li>Customised Training for Corporates</li>
+<li>Internship Programmes</li>
+<li>Online Learning</li>
+<li>Skills Assessments</li>
+<li>On-Premise Training Delivery</li>
+<li>Weekdays & Weekends Class</li>
+<li>Short Skills Development Programmes</li>
+</ul>
+
+</div>
+                
+<!-- Modal footer -->
+<div class="modal-footer" style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">
+<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+        
+        <div class="grid-container">
+          <div class="item1" >
+            <h2 style="background-color:rgba(254, 254, 255, 0.555); padding:8px;margin-top: 0; border-radius: 10px;">Introduction</h2>
+            <h2 style="padding-left: 20px;padding-right: 20px;">Data Science</h2>
+            <p > Data science is a concept to unify statistics, data analysis, informatics, and their related methods in order to "understand and analyse actual phenomena" with data. It uses techniques and theories drawn from many fields within the context of mathematics, statistics, computer science, information science, and domain knowledge.</p>
+            <h2 style="padding-left: 20px;padding-right: 20px;">What Data Science Course?</h2>
+            <p >This Data Science course,we accelerates your career in Data Science and provides you with world-class training and skills required to become successful in this field. The Data Science course offers extensive training on the most in-demand Data Science and Machine Learning skills with hands-on exposure to key tools and technologies including Python, R, Tableau, and concepts of Machine Learning. </p>
+          </div>
+          <!-- <div class="item2">Menu</div> -->
+          <div class="item3">
+            <h2 style="background-color:rgba(253, 253, 253, 0.5); padding:8px;margin-top: 0; border-radius: 10px;">Objective</h2>
+            <ul>
+                <li>Get familiar with Data Science and how Data Science works.</li>
+                <li>Learn about the changes in Data Science and the new updates in Data Science.</li>
+                <li>Get up to speed from basic to advanced.</li>
+                <li>Use various Data Science features and services.</li>
+                <li>Learn about Data Science with Python</li>
+              </ul>
+          </div>  
+          <div class="item4"> <h2 style="background-color:rgba(253, 253, 255, 0.39); padding:8px;margin-top: 0; border-radius: 10px;">Training</h2>
+            <ul >
+                <li><b>Complete Data Science Training - </b>Learn Data Science from beginner to advanced level.</li>
+                <li><b>Customized Data Science Training -</b> Customized your syllabus as per your requirement.</li>
+                <li><b>Data Science Project based Training -</b> Choose any project and get training on that project based.</li>
+                <li><b>Data Science Enterprise Application Training -</b> Get our experts assistance in your existing project.</li>
+                
+              </ul>
+          </div>
+
+
+
+          <div class="item5" style="overflow:auto; height: 500px; width: 80%;margin: auto;">
+            <h2 style="background-color:rgba(250, 250, 255, 0.363); padding:8px;margin-top: 0; border-radius: 10px;">Syllabus</h2>
+            <h3>Data science</h3>
+            <details style=" border-radius: 5px; box-shadow:0px 0px 9px 1px #252525;">
+                 <summary id="Hibi"><font size="5px"><font color="darkslategrey" ><b>Data science Overview</b></summary>
+        
+                <ul>
+                  <li>Introduction to data science</li>
+                  <li>Different sectors using Data science</li>
+                  <li>Purpose and components of python</li>
+                </ul><br></details><br>
+
+                <details  style=" border-radius: 5px; box-shadow:0px 0px 9px 1px #252525;">
+                    
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Data Analytics and overview</b></summary>
+           
+                   <ul >
+                     <li>Data Analytics Process</li>
+                     <li>Knowledge Check</li>
+                     <li>Exploratory Data Analysis(EDA)</li>
+                     <li>EDA-Quantitative Technique</li>
+                     <li>EDA - Graphical Technique</li>
+                     <li>Data Analytics Conclusion or Predictions</li>
+                     <li>Data Analytics Communication</li>
+                     <li>Data Types for Plotting</li>
+                     <li>Data Types and Plotting</li>
+                   
+                   </ul><br></details><br>
+
+                   <details  style=" border-radius: 5px; box-shadow:0px 0px 9px 1px #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Statical analysis and Business application</b></summary>
+           
+                   <ul>
+                     <li>Introduction to Statistics</li>
+                     <li>Statistical and Non-statistical Analysis</li>
+                     <li>Major Categories of Statistics</li>
+                     <li>Statistical Analysis Considerations</li>
+                     <li>Population and Sample</li>
+                     <li>Statistical Analysis Process</li>
+                     <li>Data Distribution</li>
+                     <li>Dispersion</li>
+                     <li>Histogram</li>
+                     <li>Testing</li>
+                     <li>Correlation and Inferential Statistics</li>
+                   </ul><br></details><br>
+
+                   <details  style=" border-radius: 5px; box-shadow:0px 0px 9px 1px #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Python Environment setup and essentials</b></summary>
+           
+                   <ul>
+                     <li>Anaconda</li>
+                     <li>Installation of Anaconda Python Distribution (contd.)</li>
+                     <li>Data Types with Python</li>
+                     <li>Basic Operators and Functions</li>
+                   </ul><br></details><br>
+
+                   <details  style=" border-radius: 5px; box-shadow:0px 0px 9px 1px #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Mathamatical computing with python(NumPy)</b></summary>
+           
+                   <ul>
+                     <li>IIntroduction to Numpy</li>
+                     <li>Activity-Sequence it Right</li>
+                     <li>Creating and Printing an ndarray</li>
+                     <li>Class and Attributes of ndarray</li>
+                     <li>Basic Operations</li>
+                     <li>Activity-Slice It</li>
+                     <li>Copy and Views</li>
+                     <li>Mathematical Functions of Numpy</li>
+                     <li>Analyse GDP of Countries</li>
+                     <li>Analyse London Olympics Dataset</li>
+                   </ul><br></details><br>
+
+                   <details style=" border-radius: 5px; box-shadow:0px 0px 9px 1px #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Scientific computing with python(Scipy)</b></summary>
+           
+                   <ul>
+                     <li>Introduction to SciPy</li>
+                     <li>SciPy Sub Package - Integration and Optimization</li>
+                     <li>SciPy sub package</li>
+                     <li>Calculate Eigenvalues and Eigenvector</li>
+                     <li>SciPy Sub Package - Statistics, Weave and IO</li>
+                     <li>Solving Linear Algebra problem using SciPy</li>
+                     <li>VPerform CDF and PDF using Scipy</li>
+                
+                   </ul><br></details><br>
+
+                   <details style=" border-radius: 5px; box-shadow:0px 0px 9px 1px #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Data manipulation with pandas</b></summary>
+           
+                   <ul>
+                     <li>Introduction to Pandas</li>
+                     <li>Understanding DataFrame</li>
+                     <li>Missing Values</li>
+                     <li>Data Operations</li>
+                     <li>File Read and Write Support</li>
+                     <li>Knowledge Check-Sequence it Right</li>
+                     <li>Pandas Sql Operation</li>
+                     <li>Analyse the Federal Aviation Authority Dataset using Pandas</li>
+                     <li>Analyse NewYork city fire department Dataset</li>
+                   </ul><br></details><br>
+
+                   <details style=" border-radius: 5px; box-shadow:0px 0px 9px 1px #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>MachineLearning with Scikit-learn</b></summary>
+           
+                   <ul>
+                     <li>Machine Learning Approach</li>
+                     <li>Steps One and Two</li>
+                     <li>Steps Three and Four</li>
+                     <li>How it Works</li>
+                     <li>Steps Five and Six</li>
+                     <li>Supervised Learning Model Considerations</li>
+                     <li>ScikitLearn</li>
+                     <li>Supervised Learning Models - Linear Regression</li>
+                     <li>Supervised Learning Models - Logistic Regression</li>
+                     <li>Unsupervised Learning Models</li>
+                     <li>Pipeline</li>
+                     <li>Model Persistence and Evaluation</li>
+                     <li>Analysing Ad Budgets for different media channel</li>
+                     <li>Building a model to predict Diabetes</li>
+                   
+                   </ul><br></details><br>
+
+                   <details style=" border-radius: 5px; box-shadow:0px 0px 9px 1px #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Natural Language processing with scikit learn</b></summary>
+                        <ul>
+                            <li>NLP Overview</li>
+                            <li>NLP Applications</li>
+                            <li>NLP Libraries-Scikit</li>
+                            <li>Extraction Considerations</li>
+                            <li>Scikit Learn-Model Training and Grid Search</li>
+                            <li>Analysing Spam Collection Data</li>
+                            <li>Sentiment Analysis using NLP</li>
+                          </ul></br></details></br>
+
+                   <details style=" border-radius: 5px; box-shadow:0px 0px 9px 1px #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Data visualization in python using matplotlib</b></summary>
+           
+                   <ul>
+                     <li>Introduction to Data Visualization</li>
+                     <li>Line Properties</li>
+                     <li>(x,y) Plot and Subplots</li>
+                     <li>Types of Plots</li>
+                     <li>Draw a pair plot using seaborn library</li>
+                     <li>Assignment 01 Demo</li>
+                     <li>Analysing Cause of Death</li>
+                   </ul><br></details><br>
+
+
+                   <details style=" border-radius: 5px; box-shadow:0px 0px 9px 1px #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Web scaping with BeautifulSoup</b></summary>
+           
+                   <ul>
+                     <li>Web Scraping and Parsing</li>
+                     <li>Understanding and Searching the Tree</li>
+                     <li>Navigating options</li>
+                     <li>Modifying the Tree</li>
+                     <li>Parsing and Printing the Document</li>
+                   </ul><br></details><br>
+
+
+                   <details style=" border-radius: 5px; box-shadow:0px 0px 9px 1px #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Python integration with hadoop Mapreduce and spark</b></summary>
+           
+                   <ul>
+                     <li>Why Big Data Solutions are Provided for Python</li>
+                     <li>Hadoop Core Components</li>
+                     <li>Python Integration with HDFS using Hadoop Streaming</li>
+                     <li>Using Hadoop Streaming for Calculating Word C</li>
+                     <li>Knowledge Check</li>
+                     <li>Python Integration with Spark using PySpark</li>
+                     <li>Using PySpark to Determine Word Count</li>
+                     <li>Determine the wordcount</li>
+                     <li>Display all the airports based in New York using PySpark</li>
+                
+                   </ul><br></details><br>
+
+          </div>
+        </div>
+
+
+        <!-- back button -->
+
+        <div class="py-5 text-right"><a href="file:///D:/HTML/js/prctice/website/index2.html#course" class="btn btn-dark px-5 py-3 text-uppercase">BACK</a></div>
+  </div>
+
+ <!-- The Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      <div class="modal-content">
+                                                            
+      <!-- Modal Header -->
+      <div class="modal-header bg-danger">
+      <h4 class="text-center p-2 " style="font-family: ubuntu; border-radius: 10px;background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">About Us</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+                                                            
+      <!-- Modal body -->
+      <div class="modal-body">
+                                
+      <p style="font-family: ubuntu;">Hematite Infotech Pvt. Ltd. is an organization dedicated to the spread of IT Education. Ever since its inception in 2017, the Academy has fulfilled its goals of providing Quality Computer Education, transforming the aspiring students into tomorrow’s IT professionals. Hematite Infotech has continuously upgraded its performance, creating a focus on advanced information technologies, high-end academics and training.</p>
+                              
+      <p style="font-family: ubuntu;"> The center is having modern infrastructure including corporate standard laboratories equipped with latest state of art technologies. We are proud to remain associated with the best faculty in the industry. Besides lectures from expert, visiting faculty, we also organize vide based sessions, seminars, assignments, internship, projects, faculty-student discussions, expert talk and profiling of the students, guidance in Hackathon’s, Start-up’s etc. We also have a well-equipped library, with a wide array of manuals. We also provide the placement assistance to our students. Hematite Infotech has enviable placement record since its inception.</p>
+      <ul style="font-family: ubuntu;">
+      <li>Customised Training for Corporates</li>
+      <li>Internship Programmes</li>
+      <li>Online Learning</li>
+      <li>Skills Assessments</li>
+      <li>On-Premise Training Delivery</li>
+      <li>Weekdays & Weekends Class</li>
+      <li>Short Skills Development Programmes</li>
+      </ul>
+      </div>
+                                                            
+      <!-- Modal footer -->
+      <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal"  style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">Close</button>
+      </div>
+      </div>
+      </div>
+      </div>
+    
+
+                                  <!-- The Modal -->
+<div class="modal fade" id="myModal3" role="dialog">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      
+            <!-- Modal Header -->
+  <div class="modal-header" style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">
+  <h4 class="modal-title">Application Development</h4>
+  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+  </div>
+      
+            <!-- Modal body -->
+  <div class="modal-body">
+  
+  <p>When it comes to Web/Windows programming development is completely personalized and tailored to the specific needs of each project, ensuring a platform with maximum quality and reliability. In addition, and because mobile has become inevitable, we provide the development of mobile applications for iOS and Android operating systems.</p>
+  
+      
+  <!-- Modal footer -->
+  <div class="modal-footer" style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">
+  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  
+  
+   <!-- The Modal1 -->
+  <div class="container "> 
+   
+  <div class="modal fade" id="myModal1" role="dialog">
+  <div class="modal-dialog">
+  <div class="modal-content">
+   
+         <!-- Modal Header -->
+  <div class="modal-header" style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">
+  <h4 class="modal-title">IT Training</h4>
+  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+  </div>
+   
+         <!-- Modal body -->
+  <div class="modal-body">
+  
+  <p>We train in DevOps, Web Development, PHP+MySQL, Python+M/c Learning, Angular-4/5, Android/IOS, ASP.NET, Java (Core + Advanced), Software Testing, Cloud Computing, CCNA & Business Communication.</p>
+  
+   
+  <!-- Modal footer -->
+  <div class="modal-footer" style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">
+  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  
+  
+  
+  <!-- model2 -->
+  <div class="container "> 
+    <!-- The Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+  <div class="modal-dialog">
+  <div class="modal-content">
+   
+         <!-- Modal Header -->
+  <div class="modal-header" style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">
+  <h4 class="modal-title" >IT Consulting</h4>
+  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+  </div>
+   
+         <!-- Modal body -->
+  <div class="modal-body">
+  
+  <p>Hematite Consultants advises on the technology enablement, Application security and process enablement for Organizations. Our specialized consultants help minimize the cost and time associated transformative changes in the business of IT. Primary client offerings include Management Consulting, IT Strategic Services, Project Leadership, Data Analytics, and Information Management, Application security consultants, Network engineers, Software Technology consultants.</p>
+  
+   
+  <!-- Modal footer -->
+  <div class="modal-footer" style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">
+  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+            
+
+ <!-- Remove the container if you want to extend the Footer to full width. -->
+ <div class="container1 my-5" >
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #333538;width: 100%;"
+          >
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-capitalize mb-4 ">
+             Hematite Infotech
+            </h6>
+            <p class="p1" style="font-size: medium;">
+              Hematite Infotech Pvt. Ltd, represents the highest level of competence and expertise in delivering technology training along with application development through multiple learning methodologies worldwide.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">SITEMAP</h6>
+            <ul>
+            <p>
+             <li><a class="text-white" style="text-decoration: none; font-size: small;">HOME</a></li>
+            </p>
+            <p>
+             <li><a class="text-white"style="text-decoration: none;font-size: small;">COMPANY</a></li>
+            </p>
+            <p>
+              <li><a class="text-white"style="text-decoration: none;font-size: small;">COURSES</a></li>
+            </p>
+            <p>
+             <li> <a class="text-white"style="text-decoration: none;font-size: small;">SERVICES</a></li>
+            </p>
+          </ul>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p class="p1"  style="font-size: small;"><i class="fa fa-home mr-3" ></i>  Hematite Infotech Pvt. Ltd</p>
+            <p class="p1"  style="font-size: small;"><i class="fa fa-location-arrow"></i>  Kharadi : 2nd Floor, Mathura nagar housing society,
+              Near Janseva sahakari bank Chandan nagar,
+              Kharadi, Pune 411014</p>
+            <p class="p1"  style="font-size: small;"><i class="fa fa-envelope mr-3"></i> contact@hematitecorp.com</p>
+            <p class="p1"  style="font-size: small;"><i class="fa fa-phone mr-3"></i> +91 - 8263926309 / 8208683698 / 8999639478</p>
+           
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+            <!-- Facebook -->
+            <a
+               class="btn btn-primary btn-floating m-2"
+               style="background-color: #3b5998;height: 38px; width: 38px;"
+               href="https://www.facebook.com/hematite.corp2017"
+               role="button"
+               
+               ><i class="fa fa-facebook-f"></i
+              ></a>
+
+            <!-- Twitter -->
+            <a
+               class="btn btn-primary btn-floating m-2"
+               style="background-color: #55acee;height: 38px; width: 38px;"
+               href="#!"
+               role="button"
+               ><i class="fa fa-twitter"></i
+              ></a>
+
+            <!-- Google map-->
+            <a
+               class="btn btn-primary btn-floating m-2"
+               style="background-color: #02f768;height: 38px; width: 38px;"
+               href="https://goo.gl/maps/wyQDwvPyaoG3a1GdA"
+               role="button"
+               ><i class="fa fa-map-marker"></i
+              ></a>
+
+            <!-- Instagram -->
+            <a
+               class="btn btn-primary btn-floating m-2"
+               style="background-color: #e93cb5;height: 38px; width: 38px;"
+               href="https://instagram.com/hematite_infotech?igshid=YmMyMTA2M2Y="
+               role="button"
+               ><i class="fa fa-instagram"></i
+              ></a>
+
+            <!-- Linkedin -->
+            <a
+               class="btn btn-primary btn-floating m-2"
+               style="background-color: #0082ca;height: 38px; width: 38px;"
+               href="#!"
+               role="button"
+               ><i class="fa fa-linkedin"></i></a>
+            <!-- whats app -->
+            <a
+               class="btn btn-primary btn-floating m-2"
+               style="background-color: #23d60b;height: 38px; width: 38px;"
+               href="https://wa.me/qr/RLIGHZLXEX53L1"
+               role="button"
+               ><i class="fa fa-whatsapp"></i
+              ></a>
+          </div>
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/"
+         >MDBootstrap.com</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+        
+</body>
+</html>

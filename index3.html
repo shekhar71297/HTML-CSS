@@ -1,0 +1,750 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hematite Infotech</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+
+<body>
+  <video autoplay muted loop>
+		<source src="./video/Cyan Purple Pink Gradient Color and Style Video Background.mp4" type="video/mp4">
+	</video>
+  
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top" id="nav1">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+    <img src="./images/logo.png" alt="Avatar Logo" style="width:70px; height: 70px; padding-left: 2px;" class="rounded-pill "></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav">
+  <li class="nav-item">
+  <a class="nav-link" href="file:///D:/HTML/js/prctice/website/index3.html">Home</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="file:///D:/HTML/js/prctice/website/contact.html">Contact</a>
+  </li>
+  <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+  <ul class="dropdown-menu">
+  <li><a class="dropdown-item" href="#"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal3">App's Development</button> </a></li>
+  <li><a class="dropdown-item" href="#"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">Security</button></a></li>
+  <li><a class="dropdown-item" href="#course"><button type="button" class="btn btn-primary">Courses</button></a></li>
+  <li><a class="dropdown-item" href="#"><button type="button" class="btn btn-primary">Batches</button></a></li>
+  </ul>
+  </li> 
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">AboutUS</button> 
+  </ul>
+  </div>
+  </div>
+  </nav>
+    <div class="container-fluid ">
+        
+       <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner carousel-fade">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img class="img1"  src="./images/p15.jpg" alt="Los Angeles" class="d-block" style="max-height: 500px; max-width: 100%;">
+        <div class="carousel-caption">
+        <h2 >Offering the best IT consulting Services to the world.</h2>
+        <p class="p1" style="text-align: center; font-family: ubuntu;font-size: 25px; ">Project Management</p>
+        <p class="p1" style="text-align: center; font-family: ubuntu;font-size: 25px;">Application Security</p>
+        <p class="p1" style="text-align: center; font-family: ubuntu;font-size: 25px;">Technology Solution</p>
+        <p class="p1" style="text-align: center; font-family: ubuntu;font-size:25px;">Resourcing</p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">Read more</button>
+      </div>
+      </div>
+      <div class="carousel-item"data-bs-interval="2000">
+        <img  class="img1" src="./images/pexels-soumil-kumar-735911.jpg" alt="Chicago" class="d-block"style="max-height: 500px; max-width: 100%;">
+        <div class="carousel-caption">
+          <h2 >IT Training and Software Development.</h2>
+          <p class="p1"style="text-align: center;font-family: ubuntu;font-size: 25px; color: #000;">Learn & Realize your Dreams.</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1"> Read more</button>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="1000">
+        <img  class="img1" src="./images/p13.jpg" alt="New York" class="d-block" style="max-height: 500px; max-width: 100%;">
+        <div class="carousel-caption">
+          <h2 >Devlopment.Customization.Maintainance</h2>
+          <p class="p1" style="text-align: center; font-family: ubuntu;font-size: 25px;">Web portal</p>
+          <p class="p1"style="text-align: center; font-family: ubuntu;font-size: 25px;">Mobile Apps(Android/ios)</p>
+          <p class="p1"style="text-align: center; font-family: ubuntu;font-size: 25px;">Windows Application</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal3">Read more</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  </div>
+
+
+  <div class="container ">               
+    <!-- The Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+    
+          <!-- Modal Header -->
+<div class="modal-header" style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">
+<h4 class="modal-title">About Us</h4>
+<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+    
+          <!-- Modal body -->
+<div class="modal-body">
+
+<p style="font-family: ubuntu; font-size:13px;">Hematite Infotech Pvt. Ltd. is an organization dedicated to the spread of IT Education. Ever since its inception in 2017, the Academy has fulfilled its goals of providing Quality Computer Education, transforming the aspiring students into tomorrow’s IT professionals. Hematite Infotech has continuously upgraded its performance, creating a focus on advanced information technologies, high-end academics and training.</p>
+
+<p style="font-family: ubuntu;font-size:13px;"> The center is having modern infrastructure including corporate standard laboratories equipped with latest state of art technologies. We are proud to remain associated with the best faculty in the industry. Besides lectures from expert, visiting faculty, we also organize vide based sessions, seminars, assignments, internship, projects, faculty-student discussions, expert talk and profiling of the students, guidance in Hackathon’s, Start-up’s etc. We also have a well-equipped library, with a wide array of manuals. We also provide the placement assistance to our students. Hematite Infotech has enviable placement record since its inception.</p>
+<ul style="font-family: ubuntu;font-size:13px;;">
+<li>Customised Training for Corporates</li>
+<li>Internship Programmes</li>
+<li>Online Learning</li>
+<li>Skills Assessments</li>
+<li>On-Premise Training Delivery</li>
+<li>Weekdays & Weekends Class</li>
+<li>Short Skills Development Programmes</li>
+</ul>
+
+</div>
+    
+<!-- Modal footer -->
+<div class="modal-footer" style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));"">
+<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+  <div class="container"> 
+
+
+     <!-- The Modal -->
+<div class="modal fade" id="myModal3" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+    
+          <!-- Modal Header -->
+<div class="modal-header" style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">
+<h4 class="modal-title">Application Development</h4>
+<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+    
+          <!-- Modal body -->
+<div class="modal-body">
+
+<p>When it comes to Web/Windows programming development is completely personalized and tailored to the specific needs of each project, ensuring a platform with maximum quality and reliability. In addition, and because mobile has become inevitable, we provide the development of mobile applications for iOS and Android operating systems.</p>
+
+    
+<!-- Modal footer -->
+<div class="modal-footer" style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">
+<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+ <!-- The Modal1 -->
+<div class="container "> 
+ 
+<div class="modal fade" id="myModal1" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+ 
+       <!-- Modal Header -->
+<div class="modal-header" style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">
+<h4 class="modal-title">IT Training</h4>
+<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+ 
+       <!-- Modal body -->
+<div class="modal-body">
+
+<p>We train in DevOps, Web Development, PHP+MySQL, Python+M/c Learning, Angular-4/5, Android/IOS, ASP.NET, Java (Core + Advanced), Software Testing, Cloud Computing, CCNA & Business Communication.</p>
+
+ 
+<!-- Modal footer -->
+<div class="modal-footer" style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">
+<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<!-- model2 -->
+<div class="container "> 
+  <!-- The Modal -->
+<div class="modal fade" id="myModal2" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+ 
+       <!-- Modal Header -->
+<div class="modal-header" style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">
+<h4 class="modal-title" >IT Consulting</h4>
+<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+ 
+       <!-- Modal body -->
+<div class="modal-body">
+
+<p>Hematite Consultants advises on the technology enablement, Application security and process enablement for Organizations. Our specialized consultants help minimize the cost and time associated transformative changes in the business of IT. Primary client offerings include Management Consulting, IT Strategic Services, Project Leadership, Data Analytics, and Information Management, Application security consultants, Network engineers, Software Technology consultants.</p>
+
+ 
+<!-- Modal footer -->
+<div class="modal-footer" style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">
+<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="px-lg-5">
+
+    
+    <div class="row py-5">
+      <div class="col-lg-12 mx-auto">
+        <div class="text-white p-5 shadow-sm rounded banner">
+          <h1 class="display-4"  id="course">OUR COURSES</h1>
+          <!-- <p class="lead"></p>
+          <p class="lead">Snippet by <a href="https://bootstrapious.com/snippets" class="text-reset"> 
+                        Bootstrapious</a>, Images by <a href="https://unsplash.com" class="text-reset">Unsplash</a>. -->
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End -->
+    <div class="container-fluid">
+      <div class="px-lg-5">
+    <div class="display">
+        <div class="card col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="face front">
+                <img src="free (3).png" alt="">
+                <h3>Android</h3>
+            </div>
+            <div class="face back">
+                <p>Android is an open source and Linux-based operating system for mobile devices such as smartphones and tablet computers.</p>
+                <div class="link">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-xl-3 col-lg-4 col-md-6 mb-4 ">
+            <div class="face front">
+               <img src="free (3).png" alt="">
+                <h3>Angular</h3>
+            </div>
+            <div class="face back">
+                
+                <p>Angular 14 is a JavaScript framework for building web applications and apps in JavaScript, html, and TypeScript</p>
+                <div class="link">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="face front">
+               <img src="free (3).png" alt="">
+                <h3>Web Development</h3>
+            </div>
+            <div class="face back">
+                
+                <p>Web development is the coding or programming that enables website functionality, per the owner's requirements.</p>
+                <div class="link">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="face front">
+               <img src="free (3).png" alt="">
+                <h3>Cloud Computing</h3>
+            </div>
+            <div class="face back">
+              
+                <p>Cloud Computing is a great innovation in the digital landscape that has changed the way IT solutions are delivered.</p>
+                <div class="link">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="face front">
+               <img src="free (3).png" alt="">
+                <h3>DevOps</h3>
+            </div>
+            <div class="face back">
+                
+                <p>DevOps is the fastest growing field of IT that is rapidly bridging the gap between Software Development & Operations.</p>
+                <div class="link">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="face front">
+               <img src="free (3).png" alt="">
+                <h3>Digital Marketing</h3>
+            </div>
+            <div class="face back">
+              
+                <p>Digital Marketing encompasses all marketing efforts that use an electronic device or the internet.</p>
+                <div class="link">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="face front">
+               <img src="free (3).png" alt="">
+                <h3>Microsoft.Net</h3>
+            </div>
+            <div class="face back">
+                
+                <p>ASP.NET is one of the product of Microsoft designed for creating and deploying rich Websites. </p>
+                <div class="link">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="face front">
+               <img src="free (3).png" alt="">
+                <h3>Fullstack</h3>
+            </div>
+            <div class="face back">
+                
+                <p>A full stack developer is an engineer who can handle all the work of databases, servers, systems engineering, and clients.</p>
+                <div class="link">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="face front">
+               <img src="free (3).png" alt="">
+                <h3>Graphic Design</h3>
+            </div>
+            <div class="face back">
+              
+                <p>Graphic design is the craft of creating visual content to communicate messages.</p>
+                <div class="link">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="face front">
+               <img src="free (3).png" alt="">
+                <h3>Hadoop</h3>
+            </div>
+            <div class="face back">
+                
+                <p style="font-size: small;">Hadoop is an Apache open source framework written in java that allows distributed processing of large datasets across clusters of computers using simple programming models.</p>
+                <div class="link">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="face front">
+               <img src="free (3).png" alt="">
+                <h3>Java</h3>
+            </div>
+            <div class="face back">
+                
+                <p>Java is a technology developed by James Gosling at Sun Microsystems, Sun Microsystems is now a part of Oracle Corporation.</p>
+                <div class="link">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="face front">
+               <img src="free (3).png" alt="">
+                <h3>Mean</h3>
+            </div>
+            <div class="face back">
+                
+                <p>The term MEAN stack refers to a collection of JavaScript based technologies used to develop web applications.</p>
+                <div class="link">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="face front">
+               <img src="free (3).png" alt="">
+                <h3>Mern</h3>
+            </div>
+            <div class="face back">
+                
+                <p>The MERN stack is a JavaScript stack that’s designed to make the development process smoother.</p>
+                <div class="link">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="face front">
+               <img src="free (3).png" alt="">
+                <h3>Network Security</h3>
+            </div>
+            <div class="face back">
+                
+                <p>Network Security deals with all aspects related to the protection of the sensitive information assets existing on the network.</p>
+                <div class="link">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="face front">
+               <img src="free (3).png" alt="">
+                <h3>Php</h3>
+            </div>
+            <div class="face back">
+                
+                <p>PHP stands for PHP: Hypertext Preprocessor. It is a server side technology like ASP.</p>
+                <div class="link">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="face front">
+               <img src="free (3).png" alt="">
+                <h3>Python</h3>
+            </div>
+            <div class="face back">
+                
+                <p>Python is open source & an object-oriented, high-level programming language with integrated dynamic semantics primarily for web and app development</p>
+                <div class="link">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="face front">
+               <img src="free (3).png" alt="">
+                <h3>Selenium</h3>
+            </div>
+            <div class="face back">
+               
+                <p>Selenium automates browsers. Primarily, it is for automating web applications for testing purposes,</p>
+                <div class="link">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="face front">
+               <img src="free (3).png" alt="">
+                <h3>Web Design</h3>
+            </div>
+            <div class="face back">
+                
+                <p>Designing your web, how is the look and feel of websites, designing different themes with different layouts,</p>
+                <div class="link">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="face front">
+               <img src="free (3).png" alt="">
+                <h3>Data Science</h3>
+            </div>
+            <div class="face back">
+                
+                <p>Data science is a concept to unify statistics, data analysis, informatics.</p>
+                <div class="link">
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card col-xl-3 col-lg-4 col-md-6 mb-4">
+            <div class="face front">
+               <img src="free (3).png" alt="">
+                <h3>Data visualization</h3>
+            </div>
+            <div class="face back">
+                
+                <p>Data visualization is the graphical representation of information and data. By using visual elements like charts, graphs, and maps,</p>
+                <div class="link">
+                    <a href="D:\HTML\js\prctice\website\datavisual.html">Read More</a>
+                </div>
+            </div>
+        </div>
+ 
+    
+    <div class="card col-xl-3 col-lg-4 col-md-6 mb-4">
+        <div class="face front">
+           <img src="free (3).png" alt="">
+            <h3>Software Testing</h3>
+        </div>
+        <div class="face back">
+            
+            <p>Testing is a process of evaluating a system whether it is working correctly or not as per specified requirements Testing </p>
+            <div class="link">
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="card col-xl-3 col-lg-4 col-md-6 mb-4">
+        <div class="face front">
+           <img src="free (3).png" alt="">
+            <h3>CCNA</h3>
+        </div>
+        <div class="face back">
+            
+            <p>The Cisco Certified Network Associate (CCNA) certification is the second level of Cisco's five-level career certification process.</p>
+            <div class="link">
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="card col-xl-3 col-lg-4 col-md-6 mb-4">
+        <div class="face front">
+           <img src="free (3).png" alt="">
+            <h3>Office Administration</h3>
+        </div>
+        <div class="face back">
+            
+            <p>Office Administration is a set of day-to-day activities that are related to financial planning, </p>
+            <div class="link">
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="card col-xl-3 col-lg-4 col-md-6 mb-4">
+        <div class="face front">
+           <img src="free (3).png" alt="">
+            <h3>Business Communication</h3>
+        </div>
+        <div class="face back">
+            
+            <p>Business Communication is goal oriented.</p>
+            <div class="link">
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+   
+    
+
+     
+
+ <!-- Remove the container if you want to extend the Footer to full width. -->
+ <div class="container my-5" >
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #333538;width: 100%;"
+          >
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-capitalize mb-4 ">
+             Hematite Infotech
+            </h6>
+            <p class="p1" style="font-size: medium;">
+              Hematite Infotech Pvt. Ltd, represents the highest level of competence and expertise in delivering technology training along with application development through multiple learning methodologies worldwide.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">SITEMAP</h6>
+            <ul>
+            <p>
+             <li><a class="text-white" style="text-decoration: none; font-size: small;">HOME</a></li>
+            </p>
+            <p>
+             <li><a class="text-white"style="text-decoration: none;font-size: small;">COMPANY</a></li>
+            </p>
+            <p>
+              <li><a class="text-white"style="text-decoration: none;font-size: small;">COURSES</a></li>
+            </p>
+            <p>
+             <li> <a class="text-white"style="text-decoration: none;font-size: small;">SERVICES</a></li>
+            </p>
+          </ul>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p class="p1"  style="font-size: small;"><i class="fa fa-home mr-3" ></i>  Hematite Infotech Pvt. Ltd</p>
+            <p class="p1"  style="font-size: small;"><i class="fa fa-location-arrow"></i>  Kharadi : 2nd Floor, Mathura nagar housing society,
+              Near Janseva sahakari bank Chandan nagar,
+              Kharadi, Pune 411014</p>
+            <p class="p1"  style="font-size: small;"><i class="fa fa-envelope mr-3"></i> contact@hematitecorp.com</p>
+            <p class="p1"  style="font-size: small;"><i class="fa fa-phone mr-3"></i> +91 - 8263926309 / 8208683698 / 8999639478</p>
+           
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 col-sm-1 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+            <!-- Facebook -->
+            <a
+               class="btn btn-primary btn-floating m-2"
+               style="background-color: #3b5998;height: 38px; width: 38px;"
+               href="https://www.facebook.com/hematite.corp2017"
+               role="button"
+               
+               ><i class="fa fa-facebook-f"></i
+              ></a>
+
+            <!-- Twitter -->
+            <a
+               class="btn btn-primary btn-floating m-2"
+               style="background-color: #55acee;height: 38px; width: 38px;"
+               href="#!"
+               role="button"
+               ><i class="fa fa-twitter"></i
+              ></a>
+
+            <!-- Google map-->
+            <a
+               class="btn btn-primary btn-floating m-2"
+               style="background-color: #02f768;height: 38px; width: 38px;"
+               href="https://goo.gl/maps/wyQDwvPyaoG3a1GdA"
+               role="button"
+               ><i class="fa fa-map-marker"></i
+              ></a>
+
+            <!-- Instagram -->
+            <a
+               class="btn btn-primary btn-floating m-2"
+               style="background-color: #e93cb5;height: 38px; width: 38px;"
+               href="https://instagram.com/hematite_infotech?igshid=YmMyMTA2M2Y="
+               role="button"
+               ><i class="fa fa-instagram"></i
+              ></a>
+
+            <!-- Linkedin -->
+            <a
+               class="btn btn-primary btn-floating m-2"
+               style="background-color: #0082ca;height: 38px; width: 38px;"
+               href="#!"
+               role="button"
+               ><i class="fa fa-linkedin"></i></a>
+            <!-- whats app -->
+            <a
+               class="btn btn-primary btn-floating m-2"
+               style="background-color: #23d60b;height: 38px; width: 38px;"
+               href="https://wa.me/qr/RLIGHZLXEX53L1"
+               role="button"
+               ><i class="fa fa-whatsapp"></i
+              ></a>
+          </div>
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/"
+         >MDBootstrap.com</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+        
+<!-- <script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
+<script src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js'></script><script  src="./script.js"></script> -->
+
+</body>
+</html>

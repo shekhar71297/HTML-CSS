@@ -1,0 +1,200 @@
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.display{
+    /* justify-content: center;
+    align-items: center; */
+display:inline-flex;
+flex-wrap: wrap;
+min-height: 100vh;
+margin: auto;
+/* margin-left: 55px; */
+max-width: 100%;
+
+}
+.card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    border: none;
+    background: none;
+    max-width: 100%;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+  
+}
+
+
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    /* background: rgba(109, 108, 108, 0.4); */
+    text-align: center;
+    top: 0px;
+    margin: auto;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    /* background: rgba(78, 78, 78, 0.527); */
+    padding: 15px;
+    color: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+    
+    backdrop-filter: blur(1px);
+}
+
+.card .back .link {
+    /* border-top: solid 1px #0c0c0c; */
+    height: 50px;
+    line-height: 50px;
+    background-color: #0000006c;
+    
+}
+
+.card .back .link a {
+    color: #0c0c0c;
+    text-decoration: none;
+   
+}
+
+/* .card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+} */
+
+.card .back p {
+    letter-spacing: 1px;
+} 
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.banner {
+    background: linear-gradient(30deg, #a770ef,  #cf8bf3, #fdb99b);
+    /* background: linear-gradient(30deg, #c0bfc2,  #9e9d9e, #3b3b3b); */
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+  }
+  @keyframes color{
+    0%{
+              background-position: 0 50%;
+          }
+          50%{
+              background-position: 100% 50%;
+          }
+          100%{
+              background-position: 0 50%;
+          }
+  }
+  
+      
+      .thumbnail img{
+        border: 2px solid rgb(110, 108, 108);
+        border-radius: 10px;
+        height: 300px;
+          width: 300px;
+          /* max-width: 100%; */
+          box-shadow: 6px -2px 22px 1px rgb(114, 112, 112);
+          display: flex;
+      
+          
+      }
+      .img1{
+          width: 100%;
+          max-width: 100%;
+          transition: all 2s ease-in-out
+      }
+      .img1:hover{
+        transform: scale(1.5, 1.5);
+      cursor: pointer
+  }
+      
+      .container-fluid p{
+          text-align: justify;
+          
+      }
+      .container-fluid{
+        padding-right: calc(var(--bs-gutter-x) * .0);
+        padding-left: calc(var(--bs-gutter-x) * .0);
+      }
+      h2{
+        text-shadow: 4px 10px 11px #0b0000, 0 0 7px #fff8b6, 0 0 24px #e9c80d;
+      }
+     p{
+      text-align: justify;
+      font-size: small;
+     
+     }
+     .container1{
+      padding-left: calc(var(--bs-gutter-x) * .0);
+      padding-right: calc(var(--bs-gutter-x) * .0);
+      
+  
+     }
+     .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+     }
+     .container2:hover .image {
+      background-color: rgb(42, 236, 226);
+    opacity: 0.4;
+     }
+     .container2:hover .centered {
+    
+    opacity: 1;
+  }

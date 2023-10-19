@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+         .p1{
+    text-align: justify;
+    font-size: 20px;
+   }
+        .item1 { grid-area: header; }
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: right; }
+        .item5 { grid-area: footer; }
+        
+        .grid-container {
+          display: grid;
+          grid-template-areas:
+            'header header header header header header'
+            'main main main right right right'
+            'footer footer footer footer footer footer';
+          gap: 10px;
+          /* background-color: #2196F3; */
+          /* padding: 10px; */
+          margin-left: 20px;
+          margin-right: 20px;
+          
+        }
+        
+        .grid-container  div {
+          background:linear-gradient(90deg,#d5dce0d3, rgb(103, 145, 173), rgba(89, 134, 185, 0.705));
+          /* text-align: center; */
+          text-align: justify;
+          padding-left: 20px ;
+          padding-right: 20px;
+          font-size: 20px;
+          margin-top: 0;
+          border-radius: 10px;
+        }
+        body{
+    background-image: url(./images/pexels-dana-tentis-370799.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+        </style>
+        </head>
+        <body>
+             <!-- navbar -->
+             <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" alt="Avatar Logo" style="width:70px; height: 70px; padding-left: 2px;" class="rounded-pill "></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+              <li class="nav-item">
+              <a class="nav-link" href="file:///E:/HTML/website/index2.html">Home</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="file:///E:/HTML/website/contact.html">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal3">App's Development</button> </a></li>
+                <li><a class="dropdown-item" href="#"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">Security</button></a></li>
+                <li><a class="dropdown-item" href="#course"><button type="button" class="btn btn-primary">Courses</button></a></li>
+                <li><a class="dropdown-item" href="#"><button type="button" class="btn btn-primary">Batches</button></a></li>
+                
+              </ul>
+              </li> 
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">AboutUS</button> 
+              </ul>
+              </div>
+              </div>
+              </nav>
+              <!-- navbar end -->
+        
+        <div class="grid-container">
+          <div class="item1">
+            <h2 style="background-color:rgb(255, 255, 255); padding:8px;margin-top: 0; border-radius: 10px;">Introduction</h2>
+            <h2 style="padding-left: 20px;padding-right: 20px;">Data Visualization</h2>
+            <p> Data visualization is the graphical representation of information and data. By using visual elements like charts, graphs, and maps, data visualization tools provide an accessible way to see and understand trends, outliers, and patterns in data.Data visualization is also an element of the broader data presentation architecture (DPA) discipline, which aims to identify, locate, manipulate, format and deliver data in the most efficient way possible.</p>
+            <h2 style="padding-left: 20px;padding-right: 20px;">What Data Visualization Course</h2>
+            <p>Data visualization is the practice of translating information into a visual context, such as a map or graph, to make data easier for the human brain to understand and pull insights from. The main goal of data visualization is to make it easier to identify patterns, trends and outliers in large data sets.Data visualization helps to tell stories by curating data into a form easier to understand, highlighting the trends and outliers. A good visualization tells a story, removing the noise from data and highlighting the useful information.</p>
+          </div>
+          <!-- <div class="item2">Menu</div> -->
+          <div class="item3">
+            <h2 style="background-color:rgb(255, 255, 255); padding:8px;margin-top: 0; border-radius: 10px;">Objective</h2>
+            <ul >
+                <li>Get familiar with Data Visualization and how Data Visualization works.</li>
+                <li>Learn about the changes in Data Visualization and the new updates in Data Visualization.</li>
+                <li>Get up to speed from basic to advanced.</li>
+                <li>Use various Data Visualization features and services.</li>
+                <li>Learn about Data Visualization with Python</li>
+              </ul>
+          </div>  
+          <div class="item4"> <h2 style="background-color:rgb(253, 253, 253); padding:8px;margin-top: 0; border-radius: 10px;">Objective</h2>
+            <ul >
+                <li> <b>Complete Data Visualization Training -</b> Data Visualization from beginner to advanced level.</li>
+                <li><b>Customized Data Visualization Training -</b> Customized your syllabus as per your requirement.</li>
+                <li><b>Data Visualization Project based Training - </b>Choose any project and get training on that project based.</li>
+                <li><b>Data Visualization Enterprise Application Training -</b> Get our experts assistance in your existing project.</li>
+               
+              </ul></div>
+
+
+
+          <div class="item5" style="overflow: auto;height: 500px; width: 80%;margin: auto;">
+            <h2 style="background-color:rgb(255, 255, 255); padding:8px;margin-top: 0; border-radius: 10px;">Syllabus</h2>
+            <h3>Power Bi</h3>
+            <details style=" border-radius: 5px; box-shadow:0px 0px 9px 1px  #252525;">
+                 <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Power Bi Introduction</b></summary>
+        
+                <ul>
+                  <li>Introduction to data science</li>
+                  <li>Different sectors using Data science</li>
+                  <li>Purpose and components of python</li>
+                </ul><br></details><br>
+
+                <details  style=" border-radius: 5px; box-shadow:0px 0px 9px 1px  #252525;">
+                    
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Modeling With Power Bi</b></summary>
+           
+                   <ul>
+                     <li>Introduction to data science</li>
+                     <li>Different sectors using Data science</li>
+                     <li>Purpose and components of python</li>
+                   </ul><br></details><br>
+
+                   <details  style=" border-radius: 5px; box-shadow:0px 0px 9px 1px  #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Power Bi Desktop Visualization</b></summary>
+           
+                   <ul>
+                     <li>Introduction to data science</li>
+                     <li>Different sectors using Data science</li>
+                     <li>Purpose and components of python</li>
+                   </ul><br></details><br>
+
+                   <details  style=" border-radius: 5px; box-shadow:0px 0px 9px 1px  #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>DAX Expression</b></summary>
+           
+                   <ul>
+                     <li>Introduction to data science</li>
+                     <li>Different sectors using Data science</li>
+                     <li>Purpose and components of python</li>
+                   </ul><br></details><br>
+
+                   <details  style=" border-radius: 5px; box-shadow:0px 0px 9px 1px  #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Publishing And Sharing</b></summary>
+           
+                   <ul>
+                     <li>Introduction to data science</li>
+                     <li>Different sectors using Data science</li>
+                     <li>Purpose and components of python</li>
+                   </ul><br></details><br>
+
+                   <!-- tableau -->
+
+                   <h3 style="color: black;">Tableau</h3>
+
+                   <details style=" border-radius: 5px; box-shadow:0px 0px 9px 1px  #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>What is data visualization?</b></summary>
+           
+                   <ul>
+                     <li>Why Visualization came into Picture?</li>
+                     <li>Importance of Visualizing Data</li>
+                     <li>Poor Visualizations Vs. Perfect Visualizations</li>
+                     <li>Principles of Visualizations</li>
+                     <li>Tufte’s Graphical Integrity Rule</li>
+                     <li>Tufte’s Principles for Analytical Design</li>
+                     <li>Visual Rhetoric</li>
+                     <li>Goal of Data Visualization</li>
+
+                   </ul><br></details><br>
+
+                   <details style=" border-radius: 5px; box-shadow:0px 0px 9px 1px  #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Tableau-Data visualization tool</b></summary>
+           
+                   <ul>
+                     <li>Introduction to Tableau</li>
+                     <li>What is Tableau? Different Products and their functioning</li>
+                     <li>Architecture Of Tableau</li>
+                     <li>Pivot Tables</li>
+                     <li>Split Tables</li>
+                     <li>Hiding</li>
+                     <li>Rename and Aliases</li>
+                     <li>Data Interpretation</li>
+                   
+                   </ul><br></details><br>
+
+                   <details style=" border-radius: 5px; box-shadow:0px 0px 9px 1px  #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Tableau user interface</b></summary>
+           
+                   <ul>
+                     <li>Understanding about Data Types and Visual Cues</li>
+                   
+                   </ul><br></details><br>
+
+                   <details style=" border-radius: 5px; box-shadow:0px 0px 9px 1px  #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Basic charts types</b></summary>
+           
+                   <ul>
+                     <li>Text Tables, Highlight Tables, Heat Map</li>
+                     <li>Pie Chart, Tree Chart</li>
+                     <li>Bar Charts, Circle Charts</li>
+                   </ul><br></details><br>
+
+                   <details style=" border-radius: 5px; box-shadow:0px 0px 9px 1px  #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Intermediate chart</b></summary>
+           
+                   <ul>
+                     <li>Time Series Charts</li>
+                     <li>Time Series Hands-On</li>
+                     <li>Dual Lines</li>
+                     <li>Dual Combination</li>
+
+                   </ul><br></details><br>
+
+
+                   <details style=" border-radius: 5px; box-shadow:0px 0px 9px 1px  #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Advance chart</b></summary>
+           
+                   <ul>
+                     <li>Bullet Chart</li>
+                     <li>Scatter Plot</li>
+                     <li>Introduction to Correlation Analysis</li>
+                     <li>Introduction to Regression Analysis</li>
+                     <li>Trendlines</li>
+                     <li>Histograms</li>
+                     <li>Bin Sizes in Tableau</li>
+                     <li>Box Plot</li>
+                     <li>Pareto Chart</li>
+                     <li>Donut Chart, Word Cloud</li>
+                     <li>Forecasting ( Predictive Analysis)</li>
+                     <li>Purpose and components of python</li>
+                    
+                   </ul><br></details><br>
+
+
+                   <details style=" border-radius: 5px; box-shadow:0px 0px 9px 1px  #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Maps in tableau</b></summary>
+           
+                   <ul>
+                     <li>Types of Maps in Tableau</li>
+                     <li>Polygon Maps</li>
+                     <li>Connecting with WMS Server</li>
+                     <li>Custom Geo coding</li>
+                     <li>Data Layers</li>
+                     <li>Radial & Lasso Selection</li>
+                     
+                   </ul><br></details><br>
+
+
+                   <details style=" border-radius: 5px; box-shadow:0px 0px 9px 1px  #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Adding background image</b></summary>
+           
+                   <ul>
+                     <li>How to get Background Image and highlight the data on it</li>
+                     <li>Creating Data Extracts</li>
+                     <li>Filters and their working at different levels</li>
+                     <li>Usage of Filters on at Extract and Data Source level</li>
+                     <li>Worksheet level filters</li>
+                     <li>Context, Dimension Measures Filter</li>
+                     
+                   </ul><br></details><br>
+
+
+                   <details style=" border-radius: 5px; box-shadow:0px 0px 9px 1px  #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Data connectivity in depth understanding</b></summary>
+           
+                   <ul>
+                     <li>Joins</li>
+                     <li>Unions</li>
+                     <li>Data Blending</li>
+                     <li>Cross Database Joins</li>
+                     <li>Sets</li>
+                     <li>Groups</li>
+                     <li>Parameters</li>
+                   </ul><br></details><br>
+
+
+                   <details style=" border-radius: 5px; box-shadow:0px 0px 9px 1px  #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Creating calculated fields</b></summary>
+           
+                   <ul>
+                     <li>Logical Functions</li>
+                     <li>Case-If Function</li>
+                     <li>ZN Function</li>
+                     <li>Else-If Function</li>
+                     <li>Ad-Hoc Calculations</li>
+                     <li>Quick Table Calculations</li>
+                     <li>Level of Detail (LoD)</li>
+                     <li>Fixed LoD</li>
+                     <li>Include LoD</li>
+                     <li>Exclude LoD</li>
+                   </ul><br></details><br>
+
+                   <details style=" border-radius: 5px; box-shadow:0px 0px 9px 1px  #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Resposive tools tip</b></summary>
+           
+                   <ul>
+                     <li>Dashboards</li>
+                     <li>Actions at Sheet level and Dashboard level</li>
+                     <li>Story</li>
+                   
+                   </ul><br></details><br>
+
+                   <details style=" border-radius: 5px; box-shadow:0px 0px 9px 1px  #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Connecting tableau with tableau server </b></summary>
+           
+                   <ul>
+                     <li>Publishing our Workbooks in Tableau Server</li>
+                     <li>Publishing dataset on to Tableau Server</li>
+                     <li>Setting Permissions on Tableau Server</li>
+                     <li>Dual Combination</li>
+                     
+                   </ul><br></details><br>
+
+
+                   <details style=" border-radius: 5px; box-shadow:0px 0px 9px 1px  #252525;">
+                    <summary id="Hibi"><font size="5px"><font color="darkslategrey"><b>Connecting tableau with R</b></summary>
+           
+                   <ul>
+                     <li>What is R?</li>
+                     <li>How to integrate Tableau with R?</li>
+                     <li>Tableau Prep</li>
+                   
+                   </ul><br></details><br>
+
+
+          </div>
+        </div>
+
+                                 
+                                <!-- The Modal -->
+                                <div class="modal fade" id="myModal" role="dialog">
+                                  <div class="modal-dialog">
+                                  <div class="modal-content">
+                                                            
+                                                                  <!-- Modal Header -->
+                                  <div class="modal-header" style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">
+                                  <h4 class="text-center p-2 " style="font-family: ubuntu; border-radius: 10px;">About Us</h4>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                  </div>
+                                                            
+                                                                  <!-- Modal body -->
+                                  <div class="modal-body">
+                                
+                                  <p style="font-family: ubuntu;">Hematite Infotech Pvt. Ltd. is an organization dedicated to the spread of IT Education. Ever since its inception in 2017, the Academy has fulfilled its goals of providing Quality Computer Education, transforming the aspiring students into tomorrow’s IT professionals. Hematite Infotech has continuously upgraded its performance, creating a focus on advanced information technologies, high-end academics and training.</p>
+                              
+                                <p style="font-family: ubuntu;"> The center is having modern infrastructure including corporate standard laboratories equipped with latest state of art technologies. We are proud to remain associated with the best faculty in the industry. Besides lectures from expert, visiting faculty, we also organize vide based sessions, seminars, assignments, internship, projects, faculty-student discussions, expert talk and profiling of the students, guidance in Hackathon’s, Start-up’s etc. We also have a well-equipped library, with a wide array of manuals. We also provide the placement assistance to our students. Hematite Infotech has enviable placement record since its inception.</p>
+                              <ul style="font-family: ubuntu;">
+                                <li>Customised Training for Corporates</li>
+                                <li>Internship Programmes</li>
+                                <li>Online Learning</li>
+                                <li>Skills Assessments</li>
+                                <li>On-Premise Training Delivery</li>
+                                <li>Weekdays & Weekends Class</li>
+                                <li>Short Skills Development Programmes</li>
+                              </ul>
+                                  
+                                  </div>
+                                                            
+                              <!-- Modal footer -->
+                                  <div class="modal-footer">
+                                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal"  style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">Close</button>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  </div>
+                                  </div>
+
+                                  <!-- The Modal -->
+<div class="modal fade" id="myModal3" role="dialog">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      
+            <!-- Modal Header -->
+  <div class="modal-header" style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">
+  <h4 class="modal-title">Application Development</h4>
+  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+  </div>
+      
+            <!-- Modal body -->
+  <div class="modal-body">
+  
+  <p>When it comes to Web/Windows programming development is completely personalized and tailored to the specific needs of each project, ensuring a platform with maximum quality and reliability. In addition, and because mobile has become inevitable, we provide the development of mobile applications for iOS and Android operating systems.</p>
+  
+      
+  <!-- Modal footer -->
+  <div class="modal-footer" style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">
+  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  
+  
+   <!-- The Modal1 -->
+  <div class="container "> 
+   
+  <div class="modal fade" id="myModal1" role="dialog">
+  <div class="modal-dialog">
+  <div class="modal-content">
+   
+         <!-- Modal Header -->
+  <div class="modal-header" style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">
+  <h4 class="modal-title">IT Training</h4>
+  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+  </div>
+   
+         <!-- Modal body -->
+  <div class="modal-body">
+  
+  <p>We train in DevOps, Web Development, PHP+MySQL, Python+M/c Learning, Angular-4/5, Android/IOS, ASP.NET, Java (Core + Advanced), Software Testing, Cloud Computing, CCNA & Business Communication.</p>
+  
+   
+  <!-- Modal footer -->
+  <div class="modal-footer" style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">
+  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  
+  
+  
+  <!-- model2 -->
+  <div class="container "> 
+    <!-- The Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+  <div class="modal-dialog">
+  <div class="modal-content">
+   
+         <!-- Modal Header -->
+  <div class="modal-header" style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">
+  <h4 class="modal-title" >IT Consulting</h4>
+  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+  </div>
+   
+         <!-- Modal body -->
+  <div class="modal-body">
+  
+  <p>Hematite Consultants advises on the technology enablement, Application security and process enablement for Organizations. Our specialized consultants help minimize the cost and time associated transformative changes in the business of IT. Primary client offerings include Management Consulting, IT Strategic Services, Project Leadership, Data Analytics, and Information Management, Application security consultants, Network engineers, Software Technology consultants.</p>
+  
+   
+  <!-- Modal footer -->
+  <div class="modal-footer" style="background: linear-gradient(to right,#0da2ddd3,rgba(15, 236, 188, 0.705));">
+  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- back button -->
+        <div class="py-5 text-right"><a href="file:///D:/HTML/js/prctice/website/index3.html#course" class="btn btn-dark px-5 py-3 text-uppercase">BACK</a></div>
+
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container1 my-5" >
+    <!-- Footer -->
+    <footer
+            class="text-center text-lg-start text-white"
+            style="background-color: #333538;width: 100%;"
+            >
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-capitalize mb-4 ">
+               Hematite Infotech
+              </h6>
+              <p class="p1" style="font-size: medium;">
+                Hematite Infotech Pvt. Ltd, represents the highest level of competence and expertise in delivering technology training along with application development through multiple learning methodologies worldwide.
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">SITEMAP</h6>
+              <ul>
+              <p>
+               <li><a class="text-white" style="text-decoration: none; font-size: small;">HOME</a></li>
+              </p>
+              <p>
+               <li><a class="text-white"style="text-decoration: none;font-size: small;">COMPANY</a></li>
+              </p>
+              <p>
+                <li><a class="text-white"style="text-decoration: none;font-size: small;">COURSES</a></li>
+              </p>
+              <p>
+               <li> <a class="text-white"style="text-decoration: none;font-size: small;">SERVICES</a></li>
+              </p>
+            </ul>
+            </div>
+            <!-- Grid column -->
+  
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p class="p1"  style="font-size: small;"><i class="fa fa-home mr-3" ></i>  Hematite Infotech Pvt. Ltd</p>
+              <p class="p1"  style="font-size: small;"><i class="fa fa-location-arrow"></i>  Kharadi : 2nd Floor, Mathura nagar housing society,
+                Near Janseva sahakari bank Chandan nagar,
+                Kharadi, Pune 411014</p>
+              <p class="p1"  style="font-size: small;"><i class="fa fa-envelope mr-3"></i> contact@hematitecorp.com</p>
+              <p class="p1"  style="font-size: small;"><i class="fa fa-phone mr-3"></i> +91 - 8263926309 / 8208683698 / 8999639478</p>
+             
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+  
+              <!-- Facebook -->
+              <a
+                 class="btn btn-primary btn-floating m-2"
+                 style="background-color: #3b5998;height: 38px; width: 38px;"
+                 href="https://www.facebook.com/hematite.corp2017"
+                 role="button"
+                 
+                 ><i class="fa fa-facebook-f"></i
+                ></a>
+  
+              <!-- Twitter -->
+              <a
+                 class="btn btn-primary btn-floating m-2"
+                 style="background-color: #55acee;height: 38px; width: 38px;"
+                 href="#!"
+                 role="button"
+                 ><i class="fa fa-twitter"></i
+                ></a>
+  
+              <!-- Google map-->
+              <a
+                 class="btn btn-primary btn-floating m-2"
+                 style="background-color: #02f768;height: 38px; width: 38px;"
+                 href="https://goo.gl/maps/wyQDwvPyaoG3a1GdA"
+                 role="button"
+                 ><i class="fa fa-map-marker"></i
+                ></a>
+  
+              <!-- Instagram -->
+              <a
+                 class="btn btn-primary btn-floating m-2"
+                 style="background-color: #e93cb5;height: 38px; width: 38px;"
+                 href="https://instagram.com/hematite_infotech?igshid=YmMyMTA2M2Y="
+                 role="button"
+                 ><i class="fa fa-instagram"></i
+                ></a>
+  
+              <!-- Linkedin -->
+              <a
+                 class="btn btn-primary btn-floating m-2"
+                 style="background-color: #0082ca;height: 38px; width: 38px;"
+                 href="#!"
+                 role="button"
+                 ><i class="fa fa-linkedin"></i></a>
+              <!-- whats app -->
+              <a
+                 class="btn btn-primary btn-floating m-2"
+                 style="background-color: #23d60b;height: 38px; width: 38px;"
+                 href="https://wa.me/qr/RLIGHZLXEX53L1"
+                 role="button"
+                 ><i class="fa fa-whatsapp"></i
+                ></a>
+            </div>
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/"
+           >MDBootstrap.com</a
+          >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+</div>
+<!-- End of .container -->
+        
+        
+</body>
+</html>
